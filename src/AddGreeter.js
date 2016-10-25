@@ -13,6 +13,10 @@ class AddGreeter extends Component{
 
 	handleUpdate(event){
 		this.setState({greeter: event.target.value});
+		if (event.key === 'Enter') {
+            this.addGreeter();
+        }
+
 	}
 
 	addGreeter(){
@@ -24,13 +28,16 @@ class AddGreeter extends Component{
 		return(
 			<div className="add-greeter">
 				<h2>Add Name</h2>
+				
 				<input 
 					type="text" 
 					placeholder="Enter Name"
 					onChange={this.handleUpdate}
 					value={this.state.greeter}
+					onKeyPress={this.handleUpdate}
 				/>
 				<button onClick={this.addGreeter}>Add</button>
+
 			</div>
 			
 		)

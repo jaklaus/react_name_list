@@ -1,8 +1,29 @@
 .hello-world{
-  margin: 20px auto;
+  margin: 35px ;
   padding: 10px;
-  width: 80%;
-  background-color: seagreen;
+  width: 20em;
+  background-color: #6A5ACD;
   height: 100%;
   text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+  color: white;
+}
+
+button{
+	border: none;
+    font-family: inherit;
+    font-size: 14px;
+    color: #6A5ACD;
+    background: white;
+    cursor: pointer;
+    padding: 5px 5px;
+    display: inline-block;
+    margin: 5px;
+    font-weight: 700;
+    outline: none;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }
